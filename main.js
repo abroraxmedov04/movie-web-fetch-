@@ -1,4 +1,4 @@
-const BASE_URL = "http://www.omdbapi.com/?apikey=feac457b&s=";
+const BASE_URL = "https://www.omdbapi.com/?apikey=feac457b&s=";
 
 const elForm = document.querySelector(".form");
 const elInput = document.querySelector(".input");
