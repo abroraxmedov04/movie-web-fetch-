@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Lesson-2 homework OMDb Movies</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="section__inner">
+        <div class="section__wrapper">
+          <h1>MOVIES WEB PAGE</h1>
+        </div>
+        <div class="container">
+          <form class="form">
+            <input
+              class="input"
+              type="search"
+              placeholder="Search movies..."
+              aria-label="Search movies..."
+              minlength="1"
+            />
+            <select class="select">
+              <option value="">Type</option>
+              <option value="movie">Movie</option>
+              <option value="series">Series</option>
+              <option value="drama">Drama</option>
+            </select>
+            <button class="btn" type="submit">Search</button>
+          </form>
+
+          <ul class="movie__list" id="list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <template class="card-fragment">
+      <li class="movie__card card">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMjU4MTkxNzktNzUyYy00NDM2LWE5NGQtNjJlN2Q0N2MxZDAxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+          alt="card__image"
+          class="card__image"
+        />
+        <div class="card__info">
+          <h4 class="movie__name">
+            title: <strong>The Incredible Hulk</strong>
+          </h4>
+          <time class="card__year">year: <span>2008y</span></time>
+          <p class="card__type">type: movie</p>
+        </div>
+      </li>
+    </template>
+    <script src="./main.js"></script>
+  </body>
+</html>
